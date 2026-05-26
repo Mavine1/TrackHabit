@@ -5,10 +5,7 @@ import { auth } from '../config/firebase';
 import { useAuthStore } from '../store/authStore';
 import { AuthStack } from './AuthStack';
 import { MainTabs } from './MainTabs';
-import SplashScreen1 from '../screens/SplashScreen1';
-import SplashScreen2 from '../screens/SplashScreen2';
-import SplashScreen3 from '../screens/SplashScreen3';
-
+import { SplashScreen1, SplashScreen2, SplashScreen3 } from '../screens';
 export const RootNavigator = () => {
   const { user, setUser, setLoading } = useAuthStore();
   const [splashIndex, setSplashIndex] = useState(0);

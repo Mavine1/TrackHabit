@@ -4,7 +4,7 @@ import { View, Image, StyleSheet } from 'react-native';
 // Use any online image URL (replace with your own if desired)
 const SPLASH_URL = 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800';
 
-export const SplashScreen1 = ({ onFinish }: { onFinish: () => void }) => {
+export const SplashScreen3 = ({ onFinish }: { onFinish: () => void }) => {
   useEffect(() => {
     const timer = setTimeout(onFinish, 2000);
     return () => clearTimeout(timer);
@@ -21,3 +21,4 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#2e7d32' },
   image: { width: '100%', height: '100%', resizeMode: 'cover' },
 });
+export default SplashScreen3; 
