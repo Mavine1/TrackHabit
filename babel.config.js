@@ -12,6 +12,15 @@ module.exports = function (api) {
           path: '.env',
         },
       ],
+      [
+        'module-resolver',
+        {
+          root: ['./'],
+          alias: {
+            '@': './src',
+          },
+        },
+      ],
     ],
   };
 };
